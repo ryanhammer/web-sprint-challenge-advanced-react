@@ -18,7 +18,10 @@ export default class PlantList extends Component {
           plants: res.data
         });
         console.log(this.state.plants);
-      });
+      })
+      .catch( err => {
+        console.log(err);
+      })
   }
 
   render() {
